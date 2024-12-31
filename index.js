@@ -1,8 +1,9 @@
 
-computerMove='';
+
 
 function pickComputerMove(){
     randomNumber=Math.random()
+      let computerMove='';
   
       if (randomNumber>=0 && randomNumber <1/3){
       computerMove='rock';
@@ -12,6 +13,7 @@ function pickComputerMove(){
       }else if(randomNumber>=2/3 && randomNumber <1){
       computerMove='scissors';
       }
+      return computerMove;
 }
 
 
