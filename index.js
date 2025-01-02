@@ -1,17 +1,8 @@
 const score={
-  wins:'0',
-  loses:'0',
-  ties:0,
+  wins:0,
+  losses:0,
+  ties:0
 }
-
-
-
-
-
-
-
-
-
 
 function playGame(playerMove){
 
@@ -53,15 +44,13 @@ function playGame(playerMove){
   score.wins+=1;
 
  }else if (result==='You lose'){
-  score.loses+=1;
+  score.losses+=1;
  }else if (result==='Tie'){
   score.ties+=1;
  }
 
-
-
     alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}.
-Wins: ${score.wins}, Losses: ${score.loses}, Ties: ${score.ties}`);
+Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
     
   }
   
