@@ -60,7 +60,9 @@ function playGame(playerMove){
 
 
 
-    alert(`You picked ${playerMove}.Computer picked ${computerMove}. ${result}`);
+    alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}.
+Wins: ${score.wins}, Losses: ${score.loses}, Ties: ${score.ties}`);
+    
   }
   
 
