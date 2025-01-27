@@ -4,6 +4,11 @@ let score=JSON.parse(localStorage.getItem('score')) ||  {
   ties:0,
 };
 
+document.querySelector('.js-score').innerHTML=
+`Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`
+
+
+
 /*
 if(!score) {
   score= {
@@ -57,6 +62,7 @@ function playGame(playerMove){
  }else if (result==='Tie'){
   score.ties+=1;
  }
+
 
  
  localStorage.setItem('score', JSON.stringify(score));
