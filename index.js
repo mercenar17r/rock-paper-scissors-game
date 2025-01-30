@@ -9,14 +9,6 @@ document.querySelector('.js-score').innerHTML=
 
 
 
-/*
-if(!score) {
-  score= {
-    wins:0,
-    losses:0,
-    ties:0,
-  };
-} */
  
 function playGame(playerMove){
 
