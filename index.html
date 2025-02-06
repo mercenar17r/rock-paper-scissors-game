@@ -21,6 +21,12 @@ playGame('paper')
     playGame('scissors');
   ">Scissors</button>
 
+
+  <p class="js-result"></p>
+  <p class="js-moves"></p>
+
+
+
   <p class="js-score"></p>
   <button onclick="
   score.wins=0;
@@ -28,6 +34,7 @@ playGame('paper')
   score.ties=0;
 
   localStorage.removeItem('score');
+  updateScoreElement();
   ">Reset Score</button>
 
 </body>
