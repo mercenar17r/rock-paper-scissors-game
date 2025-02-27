@@ -53,15 +53,8 @@ function playGame(playerMove){
   score.ties+=1;
  }
 
-
-
- 
- 
  localStorage.setItem('score', JSON.stringify(score));
 
-
-
-   
 updateScoreElement()
 
 document.querySelector('.js-result').innerHTML= result
