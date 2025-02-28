@@ -23,12 +23,13 @@ playGame('paper')
   "><img src="images/scissors-emoji.png" class="move-icons" alt=""></button>
 
 
-  <p class="js-result"></p>
-  <p class="js-moves"></p>
-
-
-
-  <p class="js-score"></p>
+  <p class="js-result result">You win</p>
+  <p class="js-moves">You
+    <img src="images/rock-emoji.png" alt="" class="move-icons">
+    <img src="images/scissors-emoji.png" alt="" class="move-icons">
+    Computer
+  </p>
+  <p class="js-score score"></p>
   <button onclick="
   score.wins=0;
   score.losses=0;
@@ -36,7 +37,7 @@ playGame('paper')
 
   localStorage.removeItem('score');
   updateScoreElement();
-  ">Reset Score</button>
+  " class="reset-score-button">Reset Score</button>
 
 </body>
 

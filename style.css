@@ -25,3 +25,22 @@ body{
   margin-right: 10px;
 
 }
+
+.result{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.score{
+  margin-top: 60px;
+}
+.reset-score-button{
+ background-color: rgb(71, 150, 71);
+ color: white;
+ border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  padding: 8px 15px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
