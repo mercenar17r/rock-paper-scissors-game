@@ -53,23 +53,17 @@ function playGame(playerMove){
   score.ties+=1;
  }
 
-
-
- 
- 
  localStorage.setItem('score', JSON.stringify(score));
 
-
-
-   
 updateScoreElement()
 
 document.querySelector('.js-result').innerHTML= result
 
 
-document.querySelector('.js-moves').innerHTML=`You ${playerMove} - ${computerMove} Computer`
-
-    
+document.querySelector('.js-moves').innerHTML=`You
+    <img src="images/${playerMove}-emoji.png" alt="" class="move-icons">
+    <img src="images/${computerMove}-emoji.png" alt="" class="move-icons">
+    Computer`
   }
 function updateScoreElement(){
     document.querySelector('.js-score').innerHTML=
