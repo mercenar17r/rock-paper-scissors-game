@@ -34,7 +34,8 @@ body{
 .score{
   margin-top: 60px;
 }
-.reset-score-button{
+.reset-score-button,
+.auto-play-button{
  background-color: rgb(71, 150, 71);
  color: white;
  border-radius: 8px;
