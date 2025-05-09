@@ -5,13 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock, Paper and Scissors game</title>
-  <script src="index.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <p class="title">Rock Paper Scissors</p>
-  <button class="move-button" onclick="
+  <button class="move-button js-rock-button" onclick="
  playGame('rock')
   "> <img src="images/rock-emoji.png" class="move-icons" alt=""></button>
   <button class="move-button" onclick="
@@ -35,9 +34,10 @@ playGame('paper')
   updateScoreElement();
   " class="reset-score-button">Reset Score</button>
   <button class="auto-play-button" onclick="
-  
-  autoPlay()
-  ">Auto Play</button>
+autoPlay();
+">Auto Play</button>
+  <script src="index.js"></script>
+
 
 </body>
 
