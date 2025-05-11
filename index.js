@@ -36,6 +36,11 @@ function autoPlay() {
   }
 }
 
+if(isAutoPlaying===true){
+  document.querySelector('.auto-play-button').innerHTML ='Stop'
+
+}
+
 document.querySelector('.js-rock-button')
   .addEventListener('click', () => {
     playGame('rock');
